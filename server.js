@@ -2,6 +2,7 @@ const http = require('http');
 const fs = require('fs')
 
 const requestListener = function (req, res) {
+  res.setHeader("Content-Type", "text/html;charset=utf8");
   res.writeHead(200);
   res.end('你好，世界！');
 }
